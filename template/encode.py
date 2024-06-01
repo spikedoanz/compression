@@ -1,15 +1,12 @@
-window_sz       = 4096
-lookahead_sz    = 15
-min_match_len   = 4
 compressed_path = "./compressed.bin"
 source_path     = "./source.bin"
 data_path       = "../enwik9/enwik9"
 
 with open(data_path, "r") as f:
-    data = f.read()[:10000]
+    data = f.read()
     compressed = bytearray()
-    curr = 0
 
+    curr = 0
     while curr < len(data):
         literal = data[curr].encode("utf-8")
         compressed += literal
