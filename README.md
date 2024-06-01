@@ -1,24 +1,31 @@
 # Lossless Compression #
 
-# Dataset
+[Lossless compression](https://en.wikipedia.org/wiki/Lossless_compression) is a class of data compression that allows the original data to be perfectly reconstructed from the compressed data with no loss of information. 
 
-[enwiki9.zip](http://prize.hutter1.net/)
+## Dataset
 
-# Various algos #
+[enwiki9](http://prize.hutter1.net/) from the Hutter prize
 
-- [x] LZSS
+## Various algos
+
+- [ ] LZSS
 - [ ] Huffman
 - [ ] Arithmetic
 - [ ] Dynamic Markov
 
-# Rules #
+## Rules
 
 - python runtime is included
 - compression ratio is source_size / (compressed + decode.py + model_weights)
 - integrity is compared with diff
 
-# Eval #
+## Eval
 
 ```
 ./eval_sh <compression_algo_directory>
 ```
+
+## Todo
+
+- [ ] Detailed writeup on each algorithm
+- [ ] Or provide some good sources
