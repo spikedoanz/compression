@@ -11,6 +11,7 @@ This repo contains some implementations of popular compression algorithms, focus
 ## Various algos
 
 - [ ] LZSS
+- [ ] Dictionary
 - [ ] Huffman
 - [ ] Arithmetic
 - [ ] Dynamic Markov
